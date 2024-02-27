@@ -1,0 +1,90 @@
+/*----------  Subsection comment block  ----------*/
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+body>h2{
+    text-align: center;
+}
+body>p{
+    margin:0 20px;
+    background: var(--opacity01a);
+    border-radius: 8px;
+    padding:8px
+}
+.container>:is(.button,.button-title,.button-text,.input-field){
+    border-radius: 16px;
+}
+
+.button {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+
+    background: var(--opacity01c);
+    border-radius: 16px;
+}
+.button-title {
+    text-align: center;
+}
+.button-text {
+    text-align: left;
+}
+.input-field {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    resize: none;
+    background: var(--color01);
+}
+.selected {
+    background-color: var(--opacity03);
+}
+
+.like-dislike{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+.like-dislike>button{
+    width: 100%;
+    background: var(--color01);
+    padding: 8px;
+    margin: 0 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.like-dislike>#likes{
+    width: 75px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--color03);
+}
+
+.container:has(>.selected)>.top{
+    box-shadow: 0 0 10px var(--color03)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
